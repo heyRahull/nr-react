@@ -1,4 +1,7 @@
-const heading1 = React.createElement("h1", {}, "Heading1");
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const heading1 = React.createElement("h1", {}, "Heading1 for parcel");
 const heading2 = React.createElement("h2", {}, "Heading2");
 const container = React.createElement("div", { id: "container" }, [
   heading1,
