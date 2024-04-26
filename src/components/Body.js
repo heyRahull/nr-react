@@ -40,6 +40,7 @@ const Body = () => {
           }}
         />
         <button
+          data-testid="search-btn"
           className="p-2 m-2 bg-green-500 text-white rounded-md hover:bg-gray-400"
           onClick={() => {
             const data = filterData(searchText, allRestaurants);
@@ -49,7 +50,10 @@ const Body = () => {
           Search
         </button>
       </div>
-      <div className="restaurant-list flex flex-wrap bg-pink-100">
+      <div
+        data-testid="res-list"
+        className="restaurant-list flex flex-wrap bg-pink-100"
+      >
         {filterRestaurants?.length === 0 ? (
           <h1>No Restraunt match your Filter!!</h1>
         ) : (
